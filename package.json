@@ -1,0 +1,14 @@
+{
+  "name": "ts_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node": "^21.1.0"
+  }
+}
