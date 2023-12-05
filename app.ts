@@ -4,9 +4,9 @@ const snow = document.getElementById('snow')as HTMLElement
 const background = document.getElementById('background')as HTMLElement
 
 
-const audioSun: HTMLAudioElement = new Audio("/assets/sounds/summer.mp3")
-const audioRain: HTMLAudioElement = new Audio("/assets/sounds/rain.mp3")
-const audioSnow: HTMLAudioElement = new Audio("/assets/sounds/winter.mp3")
+const audioSun: HTMLAudioElement = new Audio("assets/sounds/summer.mp3")
+const audioRain: HTMLAudioElement = new Audio("assets/sounds/rain.mp3")
+const audioSnow: HTMLAudioElement = new Audio("assets/sounds/winter.mp3")
 
 let volume = document.getElementById("volume-control")as HTMLElement
 
@@ -41,7 +41,7 @@ const snowBtn = new Button(background)
 sun.addEventListener('click', () => {
     
     const isPlaying = sun.classList.contains('checked');
-    sunBtn.changeBack('url(/assets/summer-bg.jpg)')
+    sunBtn.changeBack('url(assets/summer-bg.jpg)')
     
   
     if (isPlaying) {
@@ -54,7 +54,7 @@ sun.addEventListener('click', () => {
         sun.classList.add("checked")
         rain.classList.remove("checked")
         snow.classList.remove("checked")
-        console.log('mak')
+        
     }
 
   });
@@ -62,7 +62,7 @@ sun.addEventListener('click', () => {
 rain.addEventListener('click', () => {
 
 const isPlaying = rain.classList.contains('checked');
-rainBtn.changeBack('url(/assets/rainy-bg.jpg)')
+rainBtn.changeBack('url(assets/rainy-bg.jpg)')
 
 
 if (isPlaying) {
@@ -75,7 +75,7 @@ if (isPlaying) {
     rain.classList.add("checked")
     sun.classList.remove("checked")
     snow.classList.remove("checked")
-    console.log('mak')
+    
 }
 
 });
@@ -83,7 +83,7 @@ if (isPlaying) {
 snow.addEventListener('click', () => {
 
 const isPlaying = snow.classList.contains('checked');
-snowBtn.changeBack('url(/assets/winter-bg.jpg)')
+snowBtn.changeBack('url(assets/winter-bg.jpg)')
 
 
 if (isPlaying) {
@@ -96,7 +96,7 @@ if (isPlaying) {
     snow.classList.add("checked")
     rain.classList.remove("checked")
     sun.classList.remove("checked")
-    console.log('mak')
+    
 }
 
 });
