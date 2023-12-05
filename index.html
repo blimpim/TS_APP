@@ -6,19 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="app.js" defer></script>
   <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="#" />
+
   <title>Weather sounds</title>
+  
   
 </head>
 <body>
 
-  <div class="background"></div>
-  <div class="content">
+  <div id="background" style="background: url(/assets/summer-bg.jpg);"></div>
+  <div id="content">
   
   <h1>Weather sounds</h1>
 
   <div id="app" >
     <div id="summer">
-      <button id="sun">
+      <button id="sun" >
         
       </button>
     </div>
@@ -28,12 +31,14 @@
       </button>
     </div>
     <div id="winter">
-      <button id="snow"></button>
+      <button id="snow">
+        
+      </button>
     </div>
   </div>
   <div id="scrollbar"></div>
   <div class="volume">
-    <input type="range" min="0" max="100" value="50" class="volume-range">
+    <input type="range" min="0" max="100" value="50" id="volume-control">
   </div>
 
   </div>
