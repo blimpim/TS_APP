@@ -1,0 +1,106 @@
+
+
+
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(/fonts/Roboto-Regular.ttf);
+}
+
+* {
+    margin: -3px;
+    padding: -3px;
+  }
+
+.background {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: block;
+    background: url(/assets/summer-bg.jpg);
+    width: 103vw;
+    height: 103vh;
+    filter: blur(8px);
+  }
+  
+  .content {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    font-family: Roboto-Regular;
+    font-size: x-large;
+    text-align: center;
+    padding: 20px;
+    color: rgb(216, 114, 47);
+    
+}
+
+#sun {
+    width: 200px;
+    height: 200px;
+    background: url(/assets/icons/sun.svg);
+    background-size: 50px 50px;
+    border-style: none;
+    background-repeat: no-repeat;
+    margin: auto;
+    background-position: center;
+}
+
+
+#summer {
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    margin: 20px;
+    background-image: url(/assets/summer-bg.jpg);
+    background-size: cover;
+}
+
+
+
+#rainy {
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    margin: 20px;
+    background-image: url(/assets/rainy-bg.jpg);
+    background-size: cover;
+}
+
+#rain {
+    width: 200px;
+    height: 200px;
+    background: url(/assets/icons/cloud-rain.svg);
+    background-size: 50px 50px;
+    border-style: none;
+    background-repeat: no-repeat;
+    margin: auto;
+    background-position: center;
+}
+
+#winter {
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    margin: 20px;
+    background-image: url(/assets/winter-bg.jpg);
+    background-size: cover;
+}
+
+#snow {
+    width: 200px;
+    height: 200px;
+    background: url(/assets/icons/cloud-snow.svg);
+    background-size: 50px 50px;
+    border-style: none;
+    background-repeat: no-repeat;
+    margin: auto;
+    background-position: center;
+}
